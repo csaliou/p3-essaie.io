@@ -1,0 +1,149 @@
+// tailles typo index
+
+// 30 400 (head/logo) 1,875
+// 16 500 (loc) 1
+// 16 500 (boutons + texte footer) 1
+// 24 700 (titre intro + titre parties)   1,5
+// 18 300 (sous texte intro) 1.125
+// 14 500 (nouveau) 1
+// 18 700 (titre restau) 1.125
+// 17 300 (loc restau) 1.0625
+// 18 400 (logo footer) 1.125
+
+// tailles typo menus =======
+
+// 28 400 (titre) 1.75
+// 16 300 (entree plats dessert) 1
+// 18 500 (titre met) 1.125
+// 15 300 (plus met) 0.9375
+// 15 700 (prix met) 0.9375
+
+//==========
+
+// tailles typo index - desktop
+
+// 37 400 (desk titre/logo) 2.3125
+// 40 700 (desk titre intro) 2.5
+// 16 400 (desk plus met) 1
+// 16 500 (desk texte footer) 1
+
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Shrikhand', cursive;
+
+@import "../utils/variables";
+
+* {
+    text-decoration: none;
+    color: #000000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin mob_font_headlogo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+
+@mixin mob_font_loc-btns {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@mixin mob_font_footermaintxt-dskfootertxt {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+@mixin mob_font_footerlitletxt-dskfootertxt {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+@mixin mob_font_introtitle-partstitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@mixin mob_font_introsubtext {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+@mixin mob_font_tilnbr-new {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+@mixin mob_font_restname {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+@mixin mob_font_restloc {
+    font-size: 1.0625rem;
+    font-weight: 300;
+}
+
+@mixin mob_font_footerlogo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+@mixin mob_font_titlerestname {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+@mixin mob_font_menuepd {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+@mixin mob_font_epdtitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin mob_font_epdsubtext {
+    font-size: 0.9375rem;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin mob_font_epdsubprice {
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+// fonts pour la partie desktop
+
+@mixin desk_font_headlogo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 2.3125rem;
+    font-weight: 400;
+}
+
+@mixin desk_font_introtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+@mixin desk_font_foodsubtxt {
+    font-size: 1rem;
+    font-weight: 400;
+}
